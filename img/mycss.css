@@ -1,0 +1,93 @@
+.mynav{
+background-color: #FF6600;
+}
+.logotext{
+font-family: Poppins-Medium;
+color: #FFFFFF;
+margin-left: 10px;
+letter-spacing: 0;
+}
+.logospan{
+	font-family: 'Arial';
+letter-spacing: 0;
+}
+.navitem{
+font-family: Poppins-Medium;
+letter-spacing: 0;
+color: #ffffff;
+margin-left: 10px;
+}
+.header{
+	height: 300px;
+	background-color: #FF6600;
+}
+.headerwhite{
+	height: 300px;
+	background-color: #FFFFFF;
+	margin-top: 20px;
+}
+.padderhead{
+	padding-left: 20px; 
+}
+.maginnerleft{
+	margin-left: 20px;
+}
+.headerText{
+	padding-top: 20px;
+font-family: Poppins-Medium;
+color: #000000;
+letter-spacing: 0;
+}
+.headerimage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto; /* to keep proportions */
+  height: auto; /* to keep proportions */
+  max-width: 100%; /* not to stand out from div */
+  max-height: 100%; /* not to stand out from div */
+  margin: auto auto 0; /* position to bottom and center */
+  float: right;
+}
+.headerp{
+
+font-family: Poppins-Medium;
+letter-spacing: 0;
+color: white;
+}
+.headingS{
+	/* Why Us?: */
+font-family: OpenSans-SemiBold;
+color: #4A4A4A;
+margin-top: 30px;
+}
+.rmg{
+margin-top: 50px;
+}
+.whyus-text{
+	/* Si enim sapiens aliq: */
+font-family: 'Poppins-Light';
+color: #6A6D6F;
+margin-top: 20px;
+}
+.ser-text{
+font-family: 'OpenSans-Regular';
+color: #414141;
+margin-top: 20px;
+margin-left: 0px;
+}
+.underline
+{
+	/* Rectangle 4: */
+background: #FF6600;
+border-radius: 4px;
+margin: 0 auto;
+width: 10%;
+height: 5px;
+}
+.btn-mine{
+background: #FFFFFF;
+color: #FF6600;
+}

@@ -1,0 +1,267 @@
+@media (max-width: 768px) {
+  .flex-s {
+    display: flex;
+    flex-direction: column; /* Stack on top */
+  }
+  .box-a {
+    order: 2;
+ /* Go down, bring Box B up */
+  }
+}
+.mynav{
+background-color: #FF6600;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+#servicesrowone{
+	margin-left: 20px;
+}
+.col{
+	  flex: 1;
+}
+img{
+max-width: 100%;
+min-height:100%;
+}
+.underline {
+  color: #4A4A4A;
+  display: inline;
+  border-bottom: 3px solid #FF6600;
+  padding-bottom: 8px;
+  line-height: 1.75em;
+}
+.planh{
+font-family: OpenSans-Bold;
+color: #FF6600;
+}
+.hlh{
+	/* HOME LOAN CALCULATOR: */
+font-family: OpenSans-Bold;
+color: #4A4A4A;
+letter-spacing: 0;
+}
+.footerh{
+	font-family: OpenSans-Bold;
+}
+.planpt{
+/* Si enim sapiens aliq: */
+font-family: Poppins-Light;
+color: #4A4A4A;
+}
+.underline:after,
+.underline:before {
+  content: "";
+  display: block;
+  margin: 1em 0;
+}
+
+@media(max-width:767px) {
+  .text-left {
+    text-align: center;
+  }
+}
+.pbgrey{
+	/* Rectangle 6: */
+background: #FBFBFB;
+}
+.pborange{
+background: #FF6600;
+}
+.pbpurple{
+background: #764D8E;
+}
+.logotext{
+font-family: Poppins-Medium;
+color: #FFFFFF;
+}
+.logo-image{
+	position:relative; top:1px;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logospan{
+font-family: 'Arial';
+letter-spacing: 0;
+}
+.navitem{
+font-family: Poppins-Medium;
+letter-spacing: 0;
+color: #ffffff;
+margin-left: 10px;
+}
+.sectionorange{
+	height: auto;
+	background-color: #FF6600;
+}
+
+.sectionwhite{
+	height: 300px;
+	background-color: #FFFFFF;
+	margin-top: 20px;
+}
+.padderhead{
+	padding-left: 20px; 
+}
+.maginnerleft{
+	margin-left: 20px;
+}
+.headerText{
+	padding-top: 20px;
+font-family: Poppins-Medium;
+color: #000000;
+letter-spacing: 0;
+}
+.headerimage{
+  max-width: 100%;
+  min-height: 100%;
+    float:bottom;
+}
+.headerp{
+
+font-family: Poppins-Medium;
+letter-spacing: 0;
+color: white;
+}
+.headingpartners{
+	/* Our Partners: */
+font-family: Poppins-Bold;
+color: #373A3C;
+margin-top: 20px;
+}
+.headingS{
+	/* Why Us?: */
+font-family: OpenSans-SemiBold;
+color: #4A4A4A;
+margin-top: 30px;
+}
+.rmg{
+margin-top: 50px;
+}
+.captionhl{
+	/* Calculate the home l: */
+font-family: OpenSans-SemiBold;
+color: #9B9B9B;
+letter-spacing: 0;
+}
+.OPSemiBold{
+	font-family: OpenSans-SemiBold;
+}
+.whyus-text{
+	/* Si enim sapiens aliq: */
+font-family: 'Poppins-Light';
+color: #6A6D6F;
+margin-top: 20px;
+}
+.ser-text{
+font-family: 'OpenSans-Regular';
+color: #414141;
+margin-top: 20px;
+margin-left: 0px;
+}
+.contactush{
+	font-family: 'OpenSans-Regular';
+color: #ffffff;
+margin-top: 40px;
+}
+.contactusp{
+font-family: 'OpenSans-Regular';
+color: #F6F5F5;	
+}
+.btn-mine{
+background: #FFFFFF;
+color: #FF6600;
+}
+.btn-plan{
+background: #1D4F98;
+color: #ffffff;
+}
+.horizontalul{
+	list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.horizontalli{
+	display: inline-block;
+}
+.connectimg{
+	width: 30px;
+	height: 30px;
+}
+.hero-image {
+    /* The image used */
+    background-image: url("architecture-family-house-front-yard-106399.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sip-image {
+    /* The image used */
+    background-image: url("accounting-blur-budget-128867.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.Content{
+    background-color:rgba(239,99,10,.9); 
+
+    width:100%; 
+    height:100%;
+}
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.bghlnav{
+    background-color:rgba(239,99,10,.9); 
+}
+.resultblock{
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: #F5F5F5;
+}
+.resulttxt{
+	/* Rs. 60,000: */
+font-family: OpenSans-ExtraBold;
+color: #FA6B0D;
+letter-spacing: 0;
+}
+.resultcaption{
+/* is your investment a: */
+font-family: OpenSans-SemiBold;
+color: #4A4A4A;
+letter-spacing: 0;
+}
+.margnnertop{
+	margin-top: 20px;
+}
+.horizontalaligner{
+	  position: absolute;
+  height: 40px;
+  width: 250px;
+  background: white;
+  display: flex;
+}
+.ht{
+	background-color: #61DDFF;
+}
