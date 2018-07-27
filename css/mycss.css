@@ -32,6 +32,9 @@ min-height:100%;
   padding-bottom: 8px;
   line-height: 1.75em;
 }
+.greyy{
+	color: #4A4A4A;
+}
 .planh{
 font-family: OpenSans-Bold;
 color: #FF6600;
@@ -75,6 +78,9 @@ background: #764D8E;
 .logotext{
 font-family: Poppins-Medium;
 color: #FFFFFF;
+}
+.Poppins-Medium{
+	font-family: Poppins-Medium;
 }
 .logo-image{
 	position:relative; top:1px;
@@ -264,4 +270,7 @@ letter-spacing: 0;
 }
 .ht{
 	background-color: #61DDFF;
+}
+.labeller{
+color: #9B9B9B;
 }
