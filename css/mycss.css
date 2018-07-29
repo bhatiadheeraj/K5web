@@ -7,7 +7,11 @@
     order: 2;
  /* Go down, bring Box B up */
   }
+  .marginremover{
+    margin-top: 0px;
+  }
 }
+
 .mynav{
 background-color: #FF6600;
 }

@@ -17,14 +17,14 @@
         <div class="nav-wrapper maginnerleft"><a id="logo-container" href="#" class="brand-logo left logotext flow-text"><i class=""><img class="logo-image" src="img/logo.png"></i>
 K5 Financial<span class="logospan">Services</span></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#" class="navitem">Plan</a></li>
+                <li id="planli"><a href="#plandiv" class="navitem">Plan</a></li>
                 <li><a href="#" class="navitem">Contact Us</a></li>
             </ul>
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="#" class="">Plan</a></li>
-                <li><a href="#" class="">Contact Us</a></li>
+                <li><a href="#plandiv" class="">Plan</a></li>
+                <li href="contactus.html"><a href="contactus.html" class="">Contact Us</a></li>
             </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="padding-top: 50px" ><i class="material-icons">menu</i></a>
         </div>
     </nav>
     <div class="sectionorange">
@@ -74,51 +74,45 @@ K5 Financial<span class="logospan">Services</span></a>
     </div>
     <div id="Services">
         <div class="">
-            <div class="center">
+            <div class="container">
+          <div class="row center" id="servicesrowone">
+                      <div class="center">
                 <h4 class="underline center">Services</h4>
             </div>
-            <div class="container">
-          <div class="row" id="servicesrowone">
-          <div class="col s1"></div>
-            <div class="col s2">
+            <div class="col l3 s3 center">
               <img class="center" src="img/shs.png">
               <p class="center ser-text">Health insurance</p>
             </div>
-                        <div class="col s2">
-              <img class="center" src="img/shs.png">
-              <p class="center ser-text">Health insurance</p>
+                        <div class="col l3 s3 center">
+              <img class="center" src="img/ssip.png">
+              <p class="center ser-text">SIP Investments</p>
             </div>
-                        <div class="col s2">
-              <img class="center" src="img/shs.png">
-              <p class="center ser-text">Health insurance</p>
+                        <div class="col l3 s3 center">
+              <img class="center" src="img/sli.png">
+              <p class="center ser-text">Life Insurance</p>
             </div>
-            <div class="col s2">
-              <img class="center" src="img/shs.png">
-              <p class="center ser-text">Health insurance</p>
+            <div class="col l3 s3 center">
+              <img class="center" src="img/spl.png">
+              <p class="center ser-text">Personal Loan</p>
             </div>   
-             <div class="col s2">
-              <img class="center" src="img/shs.png">
-              <p class="center ser-text">Health insurance</p>
-            </div>
           </div>
                     <div class="row" id="servicesrowone">
-          <div class="col s1"></div>
-            <div class="col s2">
+                         <div class="col l3 s3 center">
+              <img class="center" src="img/scl.png">
+              <p class="center ser-text">Corporate Loan</p>
             </div>
-                        <div class="col s2">
-              <img class="center" src="img/shs.png">
-              <p class="center ser-text flow-text">Health insurance</p>
+                        <div class="col l3 s3 center">
+              <img class="center" src="img/svl.png">
+              <p class="center ser-text ">Vehicle Loan</p>
             </div>
-                        <div class="col s2">
-              <img class="center" src="img/shs.png">
-              <p class="center ser-text">Health insurance</p>
+                        <div class="col l3 s3 center">
+              <img class="center" src="img/sml.png">
+              <p class="center ser-text">Home Loan</p>
             </div>
-            <div class="col s2">
-              <img class="center" src="img/shs.png">
-              <p class="center ser-text flow-text">Health insurance</p>
+            <div class="col l3 s3 center">
+              <img class="center" src="img/smf.png">
+              <p class="center ser-text ">Mutual Funds</p>
             </div>   
-             <div class="col s2">
-            </div>
           </div>
         </div>
     </div>
@@ -145,7 +139,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
           <div class="col s12 m6 pbgrey" style="height: 400px;">
           <h4 class="maginnerleft planh" style="margin-top: 100px">SIP CALCULATOR</h4>
           <p class="maginnerleft planpt">Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam </p>
-          <a class="maginnerleft waves-effect waves-light btn btn-plan">View</a>
+          <a class="maginnerleft waves-effect waves-light btn btn-plan" href="sip.html">View</a>
 
           </div>
         </div>
@@ -153,7 +147,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
           <div class="col s12 m6 pbgrey box-a" style="height: 400px;">
           <h4 class="maginnerleft planh" style="margin-top: 100px">Health Insurance CALCULATOR</h4>
           <p class="maginnerleft planpt">Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam </p>
-          <a class="maginnerleft waves-effect waves-light btn btn-plan">View</a>
+          <a class="maginnerleft waves-effect waves-light btn btn-plan" href="healthinsurance.html">View</a>
           </div>
          <div class="col s12 m6 pborange">
           <div class="center">
@@ -170,7 +164,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
           <div class="col s12 m6 pbgrey" style="height: 400px;">
           <h4 class="maginnerleft planh" style="margin-top: 100px">Term Plan CALCULATOR</h4>
           <p class="maginnerleft planpt">Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam </p>
-          <a class="maginnerleft waves-effect waves-light btn btn-plan">View</a>
+          <a class="maginnerleft waves-effect waves-light btn btn-plan" href="termplan.html">View</a>
 
           </div>
         </div>
@@ -178,7 +172,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
           <div class="col s12 m6 pbgrey box-a" style="height: 400px;">
           <h4 class="maginnerleft planh" style="margin-top: 100px">Home Loan CALCULATOR</h4>
           <p class="maginnerleft planpt">Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam </p>
-          <a class="maginnerleft waves-effect waves-light btn btn-plan">View</a>
+          <a class="maginnerleft waves-effect waves-light btn btn-plan" href="homeloan.html">View</a>
           </div>
          <div class="col s12 m6 pborange">
           <div class="center">
@@ -192,17 +186,17 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
       <div class="row" style="background-color: #F3F3F3;">
         <div class="col s4">
           <div class="center">
-          <img src="img/ICICI_BANK.png" style="padding: 25px;" class="responsive-img center maginnerleft">
+          <img src="img/icici.png" style="padding: 25px;" class="responsive-img center maginnerleft">
           </div>
         </div>
                 <div class="col s4">
           <div class="center">
-          <img src="img/HDFC_BANK_Logo.png" style="padding: 25px;margin: auto;" class="responsive-img center maginnerleft">
+          <img src="img/hdfc.png" style="padding: 25px;margin: auto;" class="responsive-img center maginnerleft">
           </div>
         </div>
                 <div class="col s4">
           <div class="center">
-          <img src="img/ICICI_BANK.png" style="padding: 25px;" class="responsive-img center maginnerleft">
+          <img src="img/icici.png" style="padding: 25px;" class="responsive-img center maginnerleft">
           </div>
         </div>
       </div>
@@ -211,7 +205,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
       <h4 class="center headingpartners">Get in touch</h4>
       <div class="container">
       <p class="whyus-text center">Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam.Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam ne ego istam gloriosam </p>
-      <div class="center" style="padding-bottom: 50px;">          <a class="maginnerleft waves-effect waves-light btn btn-plan">Contact Us</a>
+      <div class="center" style="padding-bottom: 50px;"><a class="maginnerleft waves-effect waves-light btn btn-plan" href="contactus.html">Contact Us</a>
 </div>
       </div>
 
@@ -225,15 +219,14 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
                 <div class="col l3 s12">
                     <h5 class="white-text footerh">Quicklinks</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Home Loan Calculator</a></li>
-                        <li><a class="white-text" href="#!">Term Plan Calculator</a></li>
-                        <li><a class="white-text" href="#!">Health Insurance Calculator</a></li>
-                        <li><a class="white-text" href="#!">Term Plan Calculator</a></li>
-                        <li><a class="white-text" href="#!">SIP Calculator</a></li>
+                        <li><a class="white-text" href="homeloan.html">Home Loan Calculator</a></li>
+                        <li><a class="white-text" href="termplan.html">Term Plan Calculator</a></li>
+                        <li><a class="white-text" href="healthinsurance.html">Health Insurance Calculator</a></li>
+                        <li><a class="white-text" href="sip.html">SIP Calculator</a></li>
                     </ul>
                 </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text footerh">Connect</h5>
+                <div class="col l3 s12 ">
+                    <h5 class="white-text footerh ">Connect</h5>
                     <ul class="horizontalul">
                         <li class="horizontalli"><a class="white-text" href="#!"><img class="connectimg" src="img/facebook-logo-button.png"></a></li>
                         <li class="horizontalli"><a class="white-text" href="#!"><img class="connectimg" src="img/twitter-logo-button.png"></a></li>
@@ -247,7 +240,7 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Dheeraj Bhatia</a>
+                Made by <a class="orange-text text-lighten-3" href="http://bhatiadheeraj.github.io">Dheeraj Bhatia</a>
             </div>
         </div>
     </footer>

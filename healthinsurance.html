@@ -30,7 +30,7 @@ K5 Financial<span class="logospan"> Services</span></a>
     <div class="ht">
         <div class="row flex-s">
             <div class="col s12 m6 box-a">
-            <div class="text-left " style="margin-top: 100px;" >
+            <div class="text-left" style="margin-top: 15%" >
                 <h4 class="black-text text-left" style="margin-top: 22px">Help your family with</h4>
                 <h2 class="white-text text-left">HEALTH INSURANCE</h2>
                </div>
@@ -48,24 +48,24 @@ K5 Financial<span class="logospan"> Services</span></a>
         <h3 class="footerh">HEALTH INSURANCE CALCULATOR</h3>
         <div class="row">
         <p class="OPSemiBold headingS">Select the family member to be insured</p>
-          <div class="col s4">
-            <div class="card-panel z-depth-0">
+          <div class="col s4" onclick="self.html">
+            <div class="card-panel z-depth-0" id="self">
             <div class="center">
               <img src="img/self.png">
               <h5>SELF</h5>
               </div>
             </div>
           </div>
-          <div class="col s4">
-                          <div class="card-panel z-depth-0">
+          <div class="col s4" href="selfandspouse.html">
+                          <div class="card-panel z-depth-0" id="selfandspouse">
             <div class="center">
               <img src="img/selfandspouse.png">
               <h5>SELF AND SPOUSE</h5>
               </div>
             </div>
           </div>
-          <div class="col s4">
-                          <div class="card-panel z-depth-0">
+          <div class="col s4" href="familyoffour.html">
+                          <div class="card-panel z-depth-0" id="familyoffour">
             <div class="center">
               <img src="img/familyoffour.png">
               <h5>FAMILY OF FOUR</h5>
@@ -86,11 +86,10 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
                 <div class="col l3 s12">
                     <h5 class="white-text footerh">Quicklinks</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Home Loan Calculator</a></li>
-                        <li><a class="white-text" href="#!">Term Plan Calculator</a></li>
-                        <li><a class="white-text" href="#!">Health Insurance Calculator</a></li>
-                        <li><a class="white-text" href="#!">Term Plan Calculator</a></li>
-                        <li><a class="white-text" href="#!">SIP Calculator</a></li>
+                        <li><a class="white-text" href="homeloan.html">Home Loan Calculator</a></li>
+                        <li><a class="white-text" href="termplan.html">Term Plan Calculator</a></li>
+                        <li><a class="white-text" href="healthinsurance.html">Health Insurance Calculator</a></li>
+                        <li><a class="white-text" href="sip.html">SIP Calculator</a></li>
                     </ul>
                 </div>
                 <div class="col l3 s12">
@@ -117,16 +116,17 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, options);
-  });
 
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
+//   $('#self').hover(
+//        function(){ $(this).addClass('z-depth-2') },
+//        function(){ $(this).removeClass('z-depth-0') }
+// );
+  jQuery(document).ready(function($){
+    $('.self').hover(
+         function(){ $(this).addClass('z-depth-2') },
+         function(){ $(this).removeClass('z-depth-0') }
+    )
+});
         
     </script>
 </body>
