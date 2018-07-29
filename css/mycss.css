@@ -153,32 +153,38 @@ margin-top: 50px;
 }
 .captionhl{
 	/* Calculate the home l: */
-font-family: 'OpenSans-SemiBold';
+font-family: 'OpenSans-SemiBold','ROBOTO','Arial';
 color: #9B9B9B;
 letter-spacing: 0;
+font-weight: 600;
+
 }
 .OPSemiBold{
 	font-family: 'OpenSans-SemiBold';
 }
 .whyus-text{
 	/* Si enim sapiens aliq: */
-font-family: 'Poppins-Light';
+font-family: 'Poppins-Light','Arial';
 color: #6A6D6F;
+font-weight: 200;
 margin-top: 20px;
 }
 .ser-text{
-font-family: 'OpenSans-Regular';
+font-family: 'OpenSans-Regular', 'Arial';
 color: #414141;
+font-weight: 400;
 margin-top: 20px;
 margin-left: 0px;
 }
 .contactush{
-	font-family: 'OpenSans-Regular';
+	font-family: 'OpenSans-Regular','ROBOTO','Arial';
 color: #ffffff;
+font-weight: 600;
 margin-top: 40px;
 }
 .contactusp{
 font-family: 'OpenSans-Regular';
+font-weight: 400;
 color: #F6F5F5;	
 }
 .btn-mine{
@@ -252,15 +258,15 @@ color: #ffffff;
 }
 .resulttxt{
 	/* Rs. 60,000: */
-font-family: 'OpenSans-ExtraBold';
 color: #FA6B0D;
 letter-spacing: 0;
+font-weight: 900;
 }
 .resultcaption{
 /* is your investment a: */
-font-family: 'OpenSans-SemiBold';
 color: #4A4A4A;
 letter-spacing: 0;
+font-weight: 200;
 }
 .margnnertop{
 	margin-top: 20px;
