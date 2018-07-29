@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'OpenSans-Bold'; /* required */
+  src: url('fonts/OpenSans-Bold.ttf');						/* required */
+
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold'; /* required */
+  src: url('fonts/OpenSans-SemiBold.ttf');						/* required */
+
+}
+@font-face {
+  font-family: 'OpenSans-Regular'; /* required */
+  src: url('fonts/OpenSans-Regular.ttf');						/* required */
+
+}
+@font-face {
+  font-family: 'OpenSans-ExtraBold'; /* required */
+  src: url('fonts/OpenSans-ExtraBold.ttf');						/* required */
+
+}
