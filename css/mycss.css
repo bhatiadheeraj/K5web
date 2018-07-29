@@ -40,21 +40,21 @@ min-height:100%;
 	color: #4A4A4A;
 }
 .planh{
-font-family: OpenSans-Bold;
+font-family: 'OpenSans-Bold';
 color: #FF6600;
 }
 .hlh{
 	/* HOME LOAN CALCULATOR: */
-font-family: OpenSans-Bold;
+font-family: 'OpenSans-Bold';
 color: #4A4A4A;
 letter-spacing: 0;
 }
 .footerh{
-	font-family: OpenSans-Bold;
+	font-family: 'OpenSans-Bold';
 }
 .planpt{
 /* Si enim sapiens aliq: */
-font-family: Poppins-Light;
+font-family: 'Poppins-Light';
 color: #4A4A4A;
 }
 .underline:after,
@@ -80,11 +80,11 @@ background: #FF6600;
 background: #764D8E;
 }
 .logotext{
-font-family: Poppins-Medium;
+font-family: 'Poppins-Medium';
 color: #FFFFFF;
 }
 .Poppins-Medium{
-	font-family: Poppins-Medium;
+	font-family: 'Poppins-Medium';
 }
 .logo-image{
 	position:relative; top:1px;
@@ -132,19 +132,19 @@ letter-spacing: 0;
 }
 .headerp{
 
-font-family: Poppins-Medium;
+font-family: 'Poppins-Medium';
 letter-spacing: 0;
 color: white;
 }
 .headingpartners{
 	/* Our Partners: */
-font-family: Poppins-Bold;
+font-family: 'Poppins-Bold';
 color: #373A3C;
 margin-top: 20px;
 }
 .headingS{
 	/* Why Us?: */
-font-family: OpenSans-SemiBold;
+font-family: 'OpenSans-SemiBold';
 color: #4A4A4A;
 margin-top: 30px;
 }
@@ -153,12 +153,12 @@ margin-top: 50px;
 }
 .captionhl{
 	/* Calculate the home l: */
-font-family: OpenSans-SemiBold;
+font-family: 'OpenSans-SemiBold';
 color: #9B9B9B;
 letter-spacing: 0;
 }
 .OPSemiBold{
-	font-family: OpenSans-SemiBold;
+	font-family: 'OpenSans-SemiBold';
 }
 .whyus-text{
 	/* Si enim sapiens aliq: */
@@ -252,13 +252,13 @@ color: #ffffff;
 }
 .resulttxt{
 	/* Rs. 60,000: */
-font-family: OpenSans-ExtraBold;
+font-family: 'OpenSans-ExtraBold';
 color: #FA6B0D;
 letter-spacing: 0;
 }
 .resultcaption{
 /* is your investment a: */
-font-family: OpenSans-SemiBold;
+font-family: 'OpenSans-SemiBold';
 color: #4A4A4A;
 letter-spacing: 0;
 }
