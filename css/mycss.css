@@ -40,22 +40,25 @@ min-height:100%;
 	color: #4A4A4A;
 }
 .planh{
-font-family: 'OpenSans-Bold';
+font-family: 'OpenSans-Bold','Arial';
 color: #FF6600;
+font-weight: 900;
 }
 .hlh{
 	/* HOME LOAN CALCULATOR: */
-font-family: 'OpenSans-Bold';
+font-family: 'OpenSans-Bold','Arial';
 color: #4A4A4A;
 letter-spacing: 0;
+font-weight: 900;
 }
 .footerh{
-	font-family: 'OpenSans-Bold';
+	font-family: 'OpenSans-Bold','Arial';
 }
 .planpt{
 /* Si enim sapiens aliq: */
-font-family: 'Poppins-Light';
+font-family: 'Poppins-Light','ROBOTO';
 color: #4A4A4A;
+font-weight: 200;
 }
 .underline:after,
 .underline:before {
@@ -80,11 +83,13 @@ background: #FF6600;
 background: #764D8E;
 }
 .logotext{
-font-family: 'Poppins-Medium';
+font-family: 'Poppins-Medium','ROBOTO';
 color: #FFFFFF;
+font-weight: 600;
 }
 .Poppins-Medium{
-	font-family: 'Poppins-Medium';
+	font-family: 'Poppins-Medium',Arial;
+  font-weight: 400;
 }
 .logo-image{
 	position:relative; top:1px;
@@ -95,11 +100,12 @@ color: #FFFFFF;
 }
 .logospan{
 font-family: 'Arial';
-letter-spacing: 0;
+letter-spacing:0;
 }
 .navitem{
-font-family: Poppins-Medium;
+font-family: Poppins-Medium,'ROBOTO';
 letter-spacing: 0;
+font-weight: 400;
 color: #ffffff;
 margin-left: 10px;
 }
@@ -121,8 +127,9 @@ margin-left: 10px;
 }
 .headerText{
 	padding-top: 20px;
-font-family: Poppins-Medium;
+font-family: Poppins-Medium,'ROBOTO';
 color: #000000;
+font-weight: 600;
 letter-spacing: 0;
 }
 .headerimage{
@@ -132,20 +139,23 @@ letter-spacing: 0;
 }
 .headerp{
 
-font-family: 'Poppins-Medium';
+font-family: 'Poppins-Medium','ROBOTO';
 letter-spacing: 0;
+font-weight: 600;
 color: white;
 }
 .headingpartners{
 	/* Our Partners: */
-font-family: 'Poppins-Bold';
+font-family: 'Poppins-Bold','ROBOTO';
 color: #373A3C;
+font-weight: 800;
 margin-top: 20px;
 }
 .headingS{
 	/* Why Us?: */
-font-family: 'OpenSans-SemiBold';
+font-family: 'OpenSans-SemiBold','Arial';
 color: #4A4A4A;
+font-weight: 700;
 margin-top: 30px;
 }
 .rmg{
@@ -160,7 +170,8 @@ font-weight: 600;
 
 }
 .OPSemiBold{
-	font-family: 'OpenSans-SemiBold';
+	font-family: 'OpenSans-SemiBold','Arial';
+  font-weight: 700;
 }
 .whyus-text{
 	/* Si enim sapiens aliq: */
@@ -183,7 +194,7 @@ font-weight: 600;
 margin-top: 40px;
 }
 .contactusp{
-font-family: 'OpenSans-Regular';
+font-family: 'OpenSans-Regular','Arial';
 font-weight: 400;
 color: #F6F5F5;	
 }
