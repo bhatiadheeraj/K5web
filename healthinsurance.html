@@ -50,15 +50,17 @@ K5 Financial<span class="logospan"> Services</span></a>
         <div class="row">
         <p class="OPSemiBold headingS">Select the family member to be insured</p>
           <div class="col s4">
-            <div class="card-panel z-depth-0" id="self">
+            <div class="card-panel" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" id="self" onclick="window.location = 'selfhealthinsurance.html';
+">
             <div class="center">
               <img src="img/self.png">
               <h5>SELF</h5>
               </div>
             </div>
           </div>
-          <div class="col s4" href="selfandspouse.html">
-                          <div class="card-panel z-depth-0" id="selfandspouse">
+          <div class="col s4" href="selfandspouse.html" >
+                          <div class="card-panel" id="selfandspouse" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="window.location = 'selfandspouse.html';
+">
             <div class="center">
               <img src="img/selfandspouse.png">
               <h5>SELF AND SPOUSE</h5>
@@ -66,7 +68,8 @@ K5 Financial<span class="logospan"> Services</span></a>
             </div>
           </div>
           <div class="col s4" href="familyoffour.html">
-                          <div class="card-panel z-depth-0" id="familyoffour">
+                          <div class="card-panel "onclick="window.location = 'famhealthinsurance.html';
+"  id="familyoffour" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
             <div class="center">
               <img src="img/familyoffour.png">
               <h5>FAMILY OF FOUR</h5>
@@ -122,12 +125,7 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
 //        function(){ $(this).addClass('z-depth-2') },
 //        function(){ $(this).removeClass('z-depth-0') }
 // );
-  jQuery(document).ready(function($){
-    $('.self').hover(
-         function(){ $(this).addClass('z-depth-2') },
-         function(){ $(this).removeClass('z-depth-0') }
-    )
-});
+
         
     </script>
 </body>

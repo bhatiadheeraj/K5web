@@ -18,5 +18,14 @@
   
 //END OF JQUERY//
 
-//ADDING EFFECTS AND JS CODE OF INDEX.HTML PAGE//
+//ADDING EFFECTS AND JS CODE OF HEALTHINSURANCE.HTML PAGE//
 
+     function mouseOver(x){
+      console.log("yooo");
+      // var d = document.getElementById(""+id);
+      x.className += " z-depth-5";
+     }
+     function mouseOut(x){
+      
+      x.classList.remove('z-depth-5');
+     }
