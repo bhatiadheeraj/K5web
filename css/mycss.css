@@ -53,6 +53,7 @@ font-weight: 900;
 }
 .footerh{
 	font-family: 'OpenSans-Bold','Arial';
+  font-weight: bold;
 }
 .planpt{
 /* Si enim sapiens aliq: */
@@ -101,6 +102,7 @@ font-weight: 600;
 .logospan{
 font-family: 'Arial';
 letter-spacing:0;
+font-weight: 200;
 }
 .navitem{
 font-family: Poppins-Medium,'ROBOTO';

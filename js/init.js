@@ -15,4 +15,8 @@
   $(document).ready(function(){
     $('.datepicker').datepicker();
   });
-          
+  
+//END OF JQUERY//
+
+//ADDING EFFECTS AND JS CODE OF INDEX.HTML PAGE//
+
