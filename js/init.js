@@ -15,6 +15,8 @@
   $(document).ready(function(){
     $('.datepicker').datepicker();
   });
+  $('[contenteditable]').keypress(function(e){ return e.which != 13; });
+
   
 //END OF JQUERY//
 

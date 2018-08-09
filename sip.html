@@ -62,7 +62,7 @@ K5 Financial<span class="logospan"> Services</span></a>
             <div>
             <h5 class="captionhl" style="float:left;">Expected Rate of return (%)</h5>
             <div style="float:right;">
-            <h6 class="captionhl orange-text" style="float:left;"  contenteditable="true">83929</h6>
+            <h6 class="captionhl orange-text" id="roilabel" style="float:left;"  contenteditable="true">6</h6>
             <select class="browser-default" style="float:right;">
       <option value="" disabled selected>Choose your option</option>
       <option value="1">Option 1</option>
@@ -73,13 +73,13 @@ K5 Financial<span class="logospan"> Services</span></a>
             <div style="clear: both;"></div>
             </div>
  <p class="range-field">
-      <input type="range" id="test5" min="1000000" max="100000000"/>
+      <input type="range" id="roi" min="6" max="24"  onchange="updateSlider(this.value)"/>
     </p>                  </div>
                         <div id="Tenure" class="margnnertop">
             <div>
             <h4 class="captionhl" style="float:left;">Tenure (in months)</h4>
             <div style="float:right;">
-            <h6 class="captionhl orange-text" style="float:left;"  contenteditable="true">83929</h6>
+            <h6 class="captionhl orange-text" id="tenurelabel" style="float:left;"  contenteditable="true">18</h6>
             <select class="browser-default" style="float:right;">
       <option value="" disabled selected>Choose your option</option>
       <option value="1">Option 1</option>
@@ -90,7 +90,7 @@ K5 Financial<span class="logospan"> Services</span></a>
             <div style="clear: both;"></div>
             </div>
  <p class="range-field">
-      <input type="range" id="test5" min="1000000" max="100000000"/>
+      <input type="range" id="test5" min="1" onchange="updateTenure(this.value)" max="30"/>
     </p>                  </div>
             </div>
             <div class="col m6 s12">
@@ -212,6 +212,19 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
       slider.enable();
       slider2.enable();
       slider3.enable();
+
+
+        function updateSlider(slideAmount) {
+            var display = document.getElementById('roilabel')
+            display.innerHTML = slideAmount;
+}
+
+        function updateTenure(slideAmount) {
+            var display = document.getElementById('tenurelabel')
+            display.innerHTML = slideAmount;
+}
+$('[contenteditable]').keypress(function(e){ return e.which != 13; });
+
 
     </script>
 </body>
