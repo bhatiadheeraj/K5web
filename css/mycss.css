@@ -80,6 +80,9 @@ background: #FBFBFB;
 .pborange{
 background: #FF6600;
 }
+.navyblue{
+  color: #11428D
+}
 .pbpurple{
 background: #764D8E;
 }
@@ -271,7 +274,7 @@ color: #ffffff;
 }
 .resulttxt{
 	/* Rs. 60,000: */
-color: #FA6B0D;
+color: #11428D;
 letter-spacing: 0;
 font-weight: 900;
 }
