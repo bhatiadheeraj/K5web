@@ -9,123 +9,113 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-        <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/mycss.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/rangeslider.css">
-<script src="js/rangeslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/rangeslider.css">
+    <script src="js/rangeslider.js"></script>
 </head>
 
 <body>
-<div class="sip-image">
-    <nav class="bghlnav z-depth-0" role="navigation">
-        <div class="nav-wrapper" style="margin-right: 10px;"><a id="logo-container" href="#" class="brand-logo left logotext"><i class=""><img class="logo-image" src="img/logo.png"></i>
+    <div class="sip-image">
+        <nav class="bghlnav z-depth-0" role="navigation">
+            <div class="nav-wrapper" style="margin-right: 10px;"><a id="logo-container" href="#" class="brand-logo left logotext"><i class=""><img class="logo-image" src="img/logo.png"></i>
 K5 Financial<span class="logospan"> Services</span></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#" class="navitem">Plan</a></li>
-                <li><a href="#" class="navitem">Contact Us</a></li>
-            </ul>
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="#" class="">Plan</a></li>
-                <li><a href="#" class="">Contact Us</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="navitem">Plan</a></li>
+                    <li><a href="#" class="navitem">Contact Us</a></li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#" class="">Plan</a></li>
+                    <li><a href="#" class="">Contact Us</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <div class="" style="height: 300px;">
+            <div class="Content"></div>
+            <div class="hero-text">
+                <h4 class="">Looking for <span class="footerh">SIP</span></h4>
+                <p class="footerh " style="color: #F6F5F5">Calculate the SIP right now!</p>
+                <a class="waves-effect waves-light btn btn-mine white">CALCULATE</a>
+            </div>
         </div>
-    </nav>
-    <div class="" style="height: 300px;">
-        <div class="Content"></div>
-        <div class="hero-text">
-            <h4 class="">Looking for <span class="footerh">SIP</span></h4>
-            <p class="footerh " style="color: #F6F5F5">Calculate the SIP right now!</p>
-            <a class="waves-effect waves-light btn btn-mine white">CALCULATE</a>
-        </div>
-    </div>
     </div>
     <div class="white">
         <h4 class="center hlh" style="margin-top: 100px">SIP CALCULATOR</h4>
         <div class="container">
             <p class="center captionhl">Calculate the SIP right now! Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam memorabilemque virtutem non magno aestimandam putem.</p>
-    </div>
-                <div class="row" style="margin-top: 50px">
+        </div>
+        <div class="row" style="margin-top: 50px">
             <div class="col m6 s12">
-            <div id="MI" >
-            <div>
-            <h4 class="captionhl" style="float:left;">Monthly Investment</h4>
-            <h4 class="captionhl orange-text" style="float:right;" contenteditable="true">83929</h4>
-
-            <div style="clear: both;"></div>
-            </div>
- <p class="range-field">
-      <input type="range" id="test5" min="1000000" max="100000000"/>
-    </p>            </div>
-                        <div id="Expected Rate of return (%)" class="margnnertop">
-            <div>
-            <h5 class="captionhl" style="float:left;">Expected Rate of return (%)</h5>
-            <div style="float:right;">
-            <h6 class="captionhl orange-text" id="roilabel" style="float:left;"  contenteditable="true">6</h6>
-            <select class="browser-default" style="float:right;">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-            </div>
-            <div style="clear: both;"></div>
-            </div>
- <p class="range-field">
-      <input type="range" id="roi" min="6" max="24"  onchange="updateSlider(this.value)"/>
-    </p>                  </div>
-                        <div id="Tenure" class="margnnertop">
-            <div>
-            <h4 class="captionhl" style="float:left;">Tenure (in months)</h4>
-            <div style="float:right;">
-            <h6 class="captionhl orange-text" id="tenurelabel" style="float:left;"  contenteditable="true">18</h6>
-            <select class="browser-default" style="float:right;">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-            </div>
-            <div style="clear: both;"></div>
-            </div>
- <p class="range-field">
-      <input type="range" id="test5" min="1" onchange="updateTenure(this.value)" max="30"/>
-    </p>                  </div>
+                <div id="MI">
+                    <div>
+                        <h4 class="captionhl" style="float:left;">Monthly Investment</h4>
+                        <h4 class="captionhl editp orange-text" id="mival" style="float:right;" contenteditable="true">1000</h4>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <div id="Expected Rate of return (%)" class="margnnertop">
+                    <div>
+                        <h5 class="captionhl" style="float:left;">Expected Rate of return (%)</h5>
+                        <div style="float:right;">
+                            <h5 class="captionhl editp orange-text" id="roilabel" style="float:left;" contenteditable="true">6</h5>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <p class="range-field">
+                        <input type="range" id="roi" min="6" max="24" onchange="updateSlider(this.value)" />
+                    </p>
+                </div>
+                <div id="Tenure" class="margnnertop">
+                    <div>
+                        <h4 class="captionhl" style="float:left;">Tenure (in months)</h4>
+                        <div style="float:right;">
+                            <h4 class="captionhl editp orange-text" id="tenurelabel" style="float:left;" contenteditable="true">18</h4>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <p class="range-field">
+                        <input type="range" min="1" id="tenurerange" onchange="updateTenure(this.value)" max="30" />
+                    </p>
+                    <div class="center">
+                        <a class="waves-effect waves-light btn-large pborange" onclick="calculate()">CALCULATE</a></div>
+                </div>
             </div>
             <div class="col m6 s12">
-            <div class="center">
-            <div class="resultblock card-panel horizontal z-depth-0"> 
-            <h4 class="resulttxt center">Rs. 89000</h4>
-            <p class="center"><strong> is your investment amount</strong></p>
-            </div>
-                        <div class="resultblock card-panel horizontal z-depth-0"> 
-            <h4 class="resulttxt center">Rs. 89000</h4>
-            <p class="resultcaption center"><strong>is your maturity amount</strong></p>
-            </div>
-                        <div class="resultblock card-panel horizontal z-depth-0"> 
-            <h4 class="resulttxt center">Rs. 89000</h4>
-            <p class="resultcaption center"><strong>is your earning on investment amount</strong></p>
-            </div>
-            </div>
+                <div class="center" id=showresult>
+                    <div class="resultblock card-panel horizontal z-depth-0">
+                        <h4 class="resulttxt center" id="resultinvested">Rs. 1000</h4>
+                        <p class="center"><strong> is your investment amount</strong></p>
+                    </div>
+                    <div class="resultblock card-panel horizontal z-depth-0">
+                        <h4 class="resulttxt center" id="resultmatureamt">Rs. 18786</h4>
+                        <p class="resultcaption center"><strong>is your maturity amount</strong></p>
+                    </div>
+                    <div class="resultblock card-panel horizontal z-depth-0">
+                        <h4 class="resulttxt center" id="resultearning">Rs. 786</h4>
+                        <p class="resultcaption center"><strong>is your earning on investment amount</strong></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <footer class="page-footer " style="background-color: #FF944C">
         <div class="row">
             <div class="col l4 s12">
                 <h5 class="white-text"><a class="white-text logotext"><img alt="logo" style="vertical-align: middle;
 width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <span class="logospan">Services</span></a></h5>
-<p class="grey-text text-lighten-4 maginnerleft">287,Orbit mall, A.B. Road, Indore.<br>0731-4979057, +91-9294851234<br>Email : k5financialservices@outlook.com</p>
+                <p class="grey-text text-lighten-4 maginnerleft">287,Orbit mall, A.B. Road, Indore.
+                    <br>0731-4979057, +91-9294851234
+                    <br>Email : k5financialservices@outlook.com</p>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text footerh">Quicklinks</h5>
                 <ul>
-                        <li><a class="white-text" href="homeloan.html">Home Loan Calculator</a></li>
-                        <li><a class="white-text" href="termplan.html">Term Plan Calculator</a></li>
-                        <li><a class="white-text" href="healthinsurance.html">Health Insurance Calculator</a></li>
-                        <li><a class="white-text" href="sip.html">SIP Calculator</a></li>
+                    <li><a class="white-text" href="homeloan.html">Home Loan Calculator</a></li>
+                    <li><a class="white-text" href="termplan.html">Term Plan Calculator</a></li>
+                    <li><a class="white-text" href="healthinsurance.html">Health Insurance Calculator</a></li>
+                    <li><a class="white-text" href="sip.html">SIP Calculator</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">
@@ -152,78 +142,52 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
-      var slider = new RangeSlider($("#slider_1"), {
-  // Colours
-  fgColour: "#FF6600", // Foreground colour
-  bgColour: "#ddd"   , // Background colour
-  
-  // Starting position
-  percentage: 20,
-  
-  // Events - will run on touch & mouse triggers
-  onDown: function(e, percentage) {
-    console.log("Clicked at", percentage + "%");
-  },
-  onMove: function(e, percentage) {
-    console.log("Moved to", percentage + "%");
-  },
-  onUp: function(e, percentage) {
-    console.log("Slider control ended");
-  }
-});
-            var slider2 = new RangeSlider($("#slider_2"), {
-  // Colours
-  fgColour: "#FF6600", // Foreground colour
-  bgColour: "#ddd"   , // Background colour
-  
-  // Starting position
-  percentage: 20,
-  
-  // Events - will run on touch & mouse triggers
-  onDown: function(e, percentage) {
-    console.log("Clicked at", percentage + "%");
-  },
-  onMove: function(e, percentage) {
-    console.log("Moved to", percentage + "%");
-  },
-  onUp: function(e, percentage) {
-    console.log("Slider control ended");
-  }
-});
-   var slider3 = new RangeSlider($("#slider_3"), {
-  // Colours
-  fgColour: "#FF6600", // Foreground colour
-  bgColour: "#ddd"   , // Background colour
-  
-  // Starting position
-  percentage: 20,
-  
-  // Events - will run on touch & mouse triggers
-  onDown: function(e, percentage) {
-    console.log("Clicked at", percentage + "%");
-  },
-  onMove: function(e, percentage) {
-    console.log("Moved to", percentage + "%");
-  },
-  onUp: function(e, percentage) {
-    console.log("Slider control ended");
-  }
-});
-      slider.enable();
-      slider2.enable();
-      slider3.enable();
+    function updateSlider(slideAmount) {
+        var display = document.getElementById('roilabel')
+        display.innerHTML = slideAmount;
+    }
+
+    function updateTenure(slideAmount) {
+        var display = document.getElementById('tenurelabel')
+        display.innerHTML = slideAmount;
+    }
+
+    function calculate() {
+        console.log('calculate check');
 
 
-        function updateSlider(slideAmount) {
-            var display = document.getElementById('roilabel')
-            display.innerHTML = slideAmount;
-}
+        var investment = document.getElementById('mival').innerHTML; //principal amount
+        var annualRate = document.getElementById('roilabel').innerHTML;
+        var monthlyRate = annualRate / 12 / 100; //Rate of interest
+        var months = document.getElementById('tenurelabel').innerHTML; //Time period 
+        var futureValue = 0; //Final Value
 
-        function updateTenure(slideAmount) {
-            var display = document.getElementById('tenurelabel')
-            display.innerHTML = slideAmount;
-}
-$('[contenteditable]').keypress(function(e){ return e.which != 13; });
+        futureValue = investment * (Math.pow(1 + monthlyRate, months) - 1) /
+            monthlyRate;
+
+
+        console.log("YOYO/ " + monthlyRate);
+
+        var resultmatureamt = document.getElementById('resultmatureamt');
+        var resultearning = document.getElementById('resultearning');
+        var resultinvested = document.getElementById('resultinvested');
+
+        resultinvested.innerHTML = "Rs. " + Math.ceil(investment);
+        resultmatureamt.innerHTML = "Rs. " + Math.ceil(futureValue);
+        var profit = futureValue - investment * months;
+        resultearning.innerHTML = "Rs. " + Math.ceil(profit);
+    }
+
+    // fireable content 
+
+    document.getElementById("roilabel").addEventListener("input", function() {
+        document.getElementById('roi').value = document.getElementById("roilabel").textContent ;
+    }, false);
+
+        document.getElementById("tenurelabel").addEventListener("input", function() {
+        document.getElementById('tenurerange').value = document.getElementById("tenurelabel").textContent ;
+    }, false);
+
 
 
     </script>

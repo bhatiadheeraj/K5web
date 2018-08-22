@@ -11,98 +11,102 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" type="text/css" href="css/mycss.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/rangeslider.css">
-<script src="js/rangeslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/rangeslider.css">
+    <script src="js/rangeslider.js"></script>
 </head>
 
 <body>
-<div class="hero-image">
-    <nav class="bghlnav z-depth-0" role="navigation">
-        <div class="nav-wrapper" style="margin-right: 10px;"><a id="logo-container" href="#" class="brand-logo left logotext"><i class=""><img class="logo-image" src="img/logo.png"></i>
+    <div class="hero-image">
+        <nav class="bghlnav z-depth-0" role="navigation">
+            <div class="nav-wrapper" style="margin-right: 10px;"><a id="logo-container" href="#" class="brand-logo left logotext"><i class=""><img class="logo-image" src="img/logo.png"></i>
 K5 Financial<span class="logospan"> Services</span></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#" class="navitem">Plan</a></li>
-                <li><a href="#" class="navitem">Contact Us</a></li>
-            </ul>
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="#" class="">Plan</a></li>
-                <li><a href="#" class="">Contact Us</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="navitem">Plan</a></li>
+                    <li><a href="#" class="navitem">Contact Us</a></li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#" class="">Plan</a></li>
+                    <li><a href="#" class="">Contact Us</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <div class="" style="height: 300px;">
+            <div class="Content"></div>
+            <div class="hero-text">
+                <h4 class="">Looking for <span class="footerh">Home Loan ?</span></h4>
+                <p class="footerh " style="color: #F6F5F5">Calculate the home loan right now!</p>
+                <a class="waves-effect waves-light btn btn-mine white">CALCULATE</a>
+            </div>
         </div>
-    </nav>
-    <div class="" style="height: 300px;">
-        <div class="Content"></div>
-        <div class="hero-text">
-            <h4 class="">Looking for <span class="footerh">Home Loan ?</span></h4>
-            <p class="footerh " style="color: #F6F5F5">Calculate the home loan right now!</p>
-            <a class="waves-effect waves-light btn btn-mine white">CALCULATE</a>
-        </div>
-    </div>
     </div>
     <div class="white">
         <h4 class="center hlh" style="margin-top: 100px">HOME LOAN CALCULATOR</h4>
         <div class="container">
             <p class="center captionhl">Calculate the home loan right now! Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam memorabilemque virtutem non magno aestimandam putem.</p>
+        </div>
     </div>
-               </div>
-     <div class="row" style="margin-top: 50px">
-            <div class="col m6 s12">
+    <div class="row" style="margin-top: 50px">
+        <div class="col m6 s12">
             <div id="LoanDiv">
-            <div>
-            <h4 class="captionhl" style="float:left;">Loan Amount</h4>
-            <h4 class="captionhl orange-text" style="float:right;">83929</h4>
-            <div style="clear: both;"></div>
+                <div>
+                    <h4 class="captionhl" style="float:left;">Loan Amount</h4>
+                    <h4 class="captionh editp orange-text" contenteditable="true" id="loanamt" style="float:right;">100000</h4>
+                    <div style="clear: both;"></div>
+                </div>
             </div>
- <p class="range-field">
-      <input type="range" id="test5" min="1000000" max="100000000"/>
-    </p>               </div>
-                        <div id="InterestRate">
-            <div>
-            <h4 class="captionhl" style="float:left;">Interest Rate(%)</h4>
-            <h4 class="captionhl orange-text" style="float:right;">83929</h4>
-            <div style="clear: both;"></div>
+            <div id="InterestRate">
+                <div>
+                    <h4 class="captionhl" style="float:left;">Interest Rate(%)</h4>
+                    <h4 class="captionhl orange-text editp" contenteditable="true" id="inttxt" style="float:right;">5</h4>
+                    <div style="clear: both;"></div>
+                </div>
+                <p class="range-field">
+                    <input type="range" id="interestrange" onchange="updateSlider(this.value)" min="6" max="24" />
+                </p>
             </div>
- <p class="range-field">
-      <input type="range" id="test5" min="1000000" max="100000000"/>
-    </p>               </div>
-                        <div id="Tenure">
-            <div>
-            <h4 class="captionhl" style="float:left;">Tenure (in months)</h4>
-            <h4 class="captionhl orange-text" style="float:right;">83929</h4>
-            <div style="clear: both;"></div>
+            <div id="Tenure">
+                <div>
+                    <h4 class="captionhl" style="float:left;">Tenure (in months)</h4>
+                    <h4 class="captionhl editp orange-text" contenteditable="true" id="tenurelabel" style="float:right;">1</h4>
+                    <div style="clear: both;"></div>
+                </div>
+                <p class="range-field">
+                    <input type="range" id="tenurerange" onchange="updateTenure(this.value)" min="1" max="30" />
+                </p>
             </div>
- <p class="range-field">
-      <input type="range" id="test5" min="1000000" max="100000000"/>
-    </p>               </div>
-            </div>
-            <div class="col m6 s12">
+                    <div class="center">
+                        <a class="waves-effect waves-light btn-large pborange" id="calculatebtn" onclick="calculate()">CALCULATE</a></div>
+        </div>
+        <div class="col m6 s12">
             <div class="center">
-              <img src="img/calculatoricon.png" class="responsive-img">
-              <h4 class="footerh hlh">Your EMI</h4>
+                <img src="img/calculatoricon.png" class="responsive-img">
+                <h4 class="footerh hlh">Your EMI</h4>
             </div>
-            <div class="center-align"><h1 class="footer hlh"><span><img src="img/rupee-indian.png" class="responsive-img" style="width: 15px;height: auto;"></span><span style="margin-left: 10px">89000</span></h1>
-            <a class="waves-effect waves-light btn orange">Apply Now</a>
-            </div>
+            <div class="center-align">
+                <h1 class="footer hlh"><span><img src="img/rupee-indian.png" class="responsive-img" style="width: 15px;height: auto;"></span><span style="margin-left: 10px">5000</span></h1>
+                <a class="waves-effect waves-light btn orange">Apply Now</a>
             </div>
         </div>
-        <div style="height: 100px;" class="white"></div>
     </div>
-
+    <div style="height: 100px;" class="white"></div>
+    </div>
     <footer class="page-footer " style="background-color: #FF944C">
         <div class="row">
             <div class="col l4 s12">
                 <h5 class="white-text"><a class="white-text logotext"><img alt="logo" style="vertical-align: middle;
 width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <span class="logospan">Services</span></a></h5>
-                <p class="grey-text text-lighten-4 maginnerleft">287,Orbit mall, A.B. Road, Indore.<br>0731-4979057, +91-9294851234<br>Email : k5financialservices@outlook.com</p>
+                <p class="grey-text text-lighten-4 maginnerleft">287,Orbit mall, A.B. Road, Indore.
+                    <br>0731-4979057, +91-9294851234
+                    <br>Email : k5financialservices@outlook.com</p>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text footerh">Quicklinks</h5>
                 <ul>
-                        <li><a class="white-text" href="homeloan.html">Home Loan Calculator</a></li>
-                        <li><a class="white-text" href="termplan.html">Term Plan Calculator</a></li>
-                        <li><a class="white-text" href="healthinsurance.html">Health Insurance Calculator</a></li>
-                        <li><a class="white-text" href="sip.html">SIP Calculator</a></li>
+                    <li><a class="white-text" href="homeloan.html">Home Loan Calculator</a></li>
+                    <li><a class="white-text" href="termplan.html">Term Plan Calculator</a></li>
+                    <li><a class="white-text" href="healthinsurance.html">Health Insurance Calculator</a></li>
+                    <li><a class="white-text" href="sip.html">SIP Calculator</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">
@@ -129,66 +133,39 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
-      var slider = new RangeSlider($("#slider_1"), {
-  // Colours
-  fgColour: "#FF6600", // Foreground colour
-  bgColour: "#ddd"   , // Background colour
-  
-  // Starting position
-  percentage: 20,
-  
-  // Events - will run on touch & mouse triggers
-  onDown: function(e, percentage) {
-    console.log("Clicked at", percentage + "%");
-  },
-  onMove: function(e, percentage) {
-    console.log("Moved to", percentage + "%");
-  },
-  onUp: function(e, percentage) {
-    console.log("Slider control ended");
-  }
-});
-            var slider2 = new RangeSlider($("#slider_2"), {
-  // Colours
-  fgColour: "#FF6600", // Foreground colour
-  bgColour: "#ddd"   , // Background colour
-  
-  // Starting position
-  percentage: 20,
-  
-  // Events - will run on touch & mouse triggers
-  onDown: function(e, percentage) {
-    console.log("Clicked at", percentage + "%");
-  },
-  onMove: function(e, percentage) {
-    console.log("Moved to", percentage + "%");
-  },
-  onUp: function(e, percentage) {
-    console.log("Slider control ended");
-  }
-});
-   var slider3 = new RangeSlider($("#slider_3"), {
-  // Colours
-  fgColour: "#FF6600", // Foreground colour
-  bgColour: "#ddd"   , // Background colour
-  
-  // Starting position
-  percentage: 20,
-  
-  // Events - will run on touch & mouse triggers
-  onDown: function(e, percentage) {
-    console.log("Clicked at", percentage + "%");
-  },
-  onMove: function(e, percentage) {
-    console.log("Moved to", percentage + "%");
-  },
-  onUp: function(e, percentage) {
-    console.log("Slider control ended");
-  }
-});
-      slider.enable();
-      slider2.enable();
-      slider3.enable();
+    function updateSlider(slideAmount) {
+        var display = document.getElementById('inttxt')
+        display.innerHTML = slideAmount;
+    }
+
+    function updateTenure(slideAmount) {
+        var display = document.getElementById('tenurelabel')
+        display.innerHTML = slideAmount;
+    }
+
+    function calculate(){
+        var tenure = document.getElementById('tenurelabel').value;
+        var interest = document.getElementById('inttxt');
+        var investment = document.getElementById('loanamt').value;
+
+        var result = 0;
+
+        result = investment * interest/100;
+        console.log(''+investment)
+    } 
+
+     // fireable content 
+
+    document.getElementById("inttxt").addEventListener("input", function() {
+        document.getElementById('interestrange').value = document.getElementById("inttxt").textContent ;
+    }, false);
+
+        document.getElementById("tenurelabel").addEventListener("input", function() {
+        document.getElementById('tenurerange').value = document.getElementById("tenurelabel").textContent ;
+    }, false);
+
+
+
 
     </script>
 </body>

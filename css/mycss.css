@@ -83,6 +83,9 @@ background: #FF6600;
 .navyblue{
   color: #11428D
 }
+.editp{
+  border:2px; border-style:solid; border-color:#CCCCCC; padding: 0.2em;
+}
 .pbpurple{
 background: #764D8E;
 }
