@@ -69,7 +69,7 @@ K5 Financial<span class="logospan"> Services</span></a>
                 </div>
                 <div id="Tenure" class="margnnertop">
                     <div>
-                        <h4 class="captionhl" style="float:left;">Tenure (in months)</h4>
+                        <h4 class="captionhl" style="float:left;">Tenure (in years)</h4>
                         <div style="float:right;">
                             <h4 class="captionhl editp orange-text" id="tenurelabel" style="float:left;" contenteditable="true">18</h4>
                         </div>
@@ -159,7 +159,7 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
         var investment = document.getElementById('mival').innerHTML; //principal amount
         var annualRate = document.getElementById('roilabel').innerHTML;
         var monthlyRate = annualRate / 12 / 100; //Rate of interest
-        var months = document.getElementById('tenurelabel').innerHTML; //Time period 
+        var months = document.getElementById('tenurelabel').innerHTML * 12; //Time period 
         var futureValue = 0; //Final Value
 
         futureValue = investment * (Math.pow(1 + monthlyRate, months) - 1) /
@@ -172,7 +172,7 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
         var resultearning = document.getElementById('resultearning');
         var resultinvested = document.getElementById('resultinvested');
 
-        resultinvested.innerHTML = "Rs. " + Math.ceil(investment);
+        resultinvested.innerHTML = "Rs. " + Math.ceil(investment*months);
         resultmatureamt.innerHTML = "Rs. " + Math.ceil(futureValue);
         var profit = futureValue - investment * months;
         resultearning.innerHTML = "Rs. " + Math.ceil(profit);

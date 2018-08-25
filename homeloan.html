@@ -72,11 +72,11 @@ K5 Financial<span class="logospan"> Services</span></a>
                     <div style="clear: both;"></div>
                 </div>
                 <p class="range-field">
-                    <input type="range" id="tenurerange" onchange="updateTenure(this.value)" min="1" max="30" />
+                    <input type="range" id="tenurerange" onchange="updateTenure(this.value)" min="1" max="240" />
                 </p>
             </div>
-                    <div class="center">
-                        <a class="waves-effect waves-light btn-large pborange" id="calculatebtn" onclick="calculate()">CALCULATE</a></div>
+            <div class="center">
+                <a class="waves-effect waves-light btn-large pborange" id="calculatebtn" onclick="calculate()">CALCULATE</a></div>
         </div>
         <div class="col m6 s12">
             <div class="center">
@@ -84,7 +84,7 @@ K5 Financial<span class="logospan"> Services</span></a>
                 <h4 class="footerh hlh">Your EMI</h4>
             </div>
             <div class="center-align">
-                <h1 class="footer hlh"><span><img src="img/rupee-indian.png" class="responsive-img" style="width: 15px;height: auto;"></span><span style="margin-left: 10px">5000</span></h1>
+                <h1 class="footer hlh" ><span><img src="img/rupee-indian.png" class="responsive-img" style="width: 15px;height: auto;"></span><span style="margin-left: 10px" id="emino" >5000</span></h1>
                 <a class="waves-effect waves-light btn orange">Apply Now</a>
             </div>
         </div>
@@ -143,30 +143,45 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
         display.innerHTML = slideAmount;
     }
 
-    function calculate(){
-        var tenure = document.getElementById('tenurelabel').value;
-        var interest = document.getElementById('inttxt');
-        var investment = document.getElementById('loanamt').value;
+    function calculate() {
+        var tenure = document.getElementById('tenurelabel').textContent;
+        var interest = document.getElementById('inttxt').textContent;
+        var investment = document.getElementById('loanamt').textContent;
 
         var result = 0;
 
-        result = investment * interest/100;
-        console.log(''+investment)
-    } 
+        result = investment * interest / 100;
 
-     // fireable content 
+        // var finalamt = FV(investment,interest,tenure) / tenure;
+        // console.log(""+finalamt);
+
+         var princ = investment;
+         var term  = tenure / 12;
+         var intr   = interest / 1200;
+      
+         var fp = FV(princ,interest,term) ;
+         var fcc = fp /tenure
+         console.log("FXX IS "+fcc);
+
+         document.getElementById('emino').innerHTML = Math.ceil(fcc) ;
+
+    }
+
+    // fireable content 
 
     document.getElementById("inttxt").addEventListener("input", function() {
-        document.getElementById('interestrange').value = document.getElementById("inttxt").textContent ;
+        document.getElementById('interestrange').value = document.getElementById("inttxt").textContent;
     }, false);
 
-        document.getElementById("tenurelabel").addEventListener("input", function() {
-        document.getElementById('tenurerange').value = document.getElementById("tenurelabel").textContent ;
+    document.getElementById("tenurelabel").addEventListener("input", function() {
+        document.getElementById('tenurerange').value = document.getElementById("tenurelabel").textContent;
     }, false);
 
-
-
-
+    function FV(PV, i, n) {
+        var x = (1 + i / 100)
+        var FV = PV * (Math.pow(x, n)) ;
+        return FV;
+    }
     </script>
 </body>
 
