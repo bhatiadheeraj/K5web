@@ -70,7 +70,6 @@ K5 Financial<span class="logospan"> Services</span></a>            <ul class="ri
                     <div class="row">
                       <div class="col s12 input-field">
     <select>
-      <option value="" disabled selected>Choose your option</option>
       <option value="1">MALE</option>
       <option value="2">FEMALE</option>
     </select>
@@ -79,36 +78,48 @@ K5 Financial<span class="logospan"> Services</span></a>            <ul class="ri
                     </div>
                   </div>
                 </div>
-                                <div class="col s12 m6 l4">
-                  <div class="center">
-                    <img src="img/cigarette.png">
-                                        <div class="center">
-                    <div class="row">
-                      <div class="col s12">
-                                          <h6 class="hlh">Do you consume Tobacco?</h6>
-                      <div class="input-field">
-                      <form action="#">
-    <p>
-      <label>
-        <input name="group1" type="radio" checked />
-        <span>YES</span>
-      </label>
-      <label>
-        <input name="group1" type="radio" />
-        <span>NO</span>
-      </label>
-    </p>
-    </form>
-                      </div>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="divider"></div>
+                                <div class="col s12 m6 l4 center">
 
-                <div class="container" style="height: 250px;">
+                                <div class="center">
+                                  <img src="img/time-is-money.png" style="width: 174px; height: 174px;">
+                                </div>
+          <div class="horizontalul">
+                                          <div class="horizontalli">
+                  <p class="hlh">Premium Pay</p>
+          <h5 class="hlh orange-text">Rs.<span class="editp" id="mamt" contenteditable="true" style="margin-left: 2px;">100000</span></h5>
+          </div>
+          <div class="horizontalli">
+           <p class="hlh">Term<span class="grey-text" style="font-size: 8px"> in years</span></p>
+          <h5 class="hlh orange-text" id="term"><span class="editp" contenteditable="true" style="margin-left: 2px;">10</span><span style="margin-left: 5px"></span></h5>
+          </div>
+          <div class="horizontalli">
+            <p class="hlh">Premium Mode</p>
+                  <select id="mode">
+      <option value="1">Monthly</option>
+      <option value="2">Yearly</option>
+    </select>
+    </div>
+          </div>
+          </div>
+</div>
+              <div class="container hide" id="resultblock">
+              <div class="row grey lighten-4" style="height: 200px">
+                      <div class="resultblock card-panel horizontal z-depth-0" style="  transition: all 0.4s ease-in-out;
+">
+                        <h4 class="resulttxt center" id="resultmatureamt">Rs. <span id="maturity">18786</span></h4>
+                        <p class="resultcaption center"><strong>is your maturity amount</strong></p>
+                    </div>
+             </div>
+                </div>
+                          <div class="center " style="height: 50px">
+            <button class="btn orange large" onclick="tp()">Calculate</button>
+          </div>
+              </div>
+
+                
+              </div>
+
+<!--                 <div class="container" style="height: 250px; visibility: ">
                   <div class="row">
                     <div class="sum">
                       <div class="col s12 m6 l4 margnnertop">
@@ -141,7 +152,7 @@ K5 Financial<span class="logospan"> Services</span></a>            <ul class="ri
 
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
     </div>
 
@@ -196,6 +207,62 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
     $('select').formSelect();
   });
         
+  function tp(){
+
+    var element = document.querySelector('.datepicker');
+    var elem = document.getElementById('resultblock');
+    var datepickervalue = M.Datepicker.getInstance(element);
+    var term = document.getElementById('term').textContent;
+    var eamt = document.getElementById('mamt').textContent;
+    console.log('the value is '+datepickervalue);
+    var mode = document.getElementById("mode").value;
+    var maturity = document.getElementById('maturity');
+
+    var totamount = 0;
+
+
+    //null check
+
+    if (!Date.parse(datepickervalue)) {
+        M.toast({html: 'Fill your Birthdate', classes: 'rounded'});
+    }
+    if (!term) {
+      M.toast({html: 'Fill Term', classes: 'rounded'});
+    }
+    if (!eamt){
+      M.toast({html: 'Fill Maturity Amount', classes: 'rounded'});
+    }
+
+    // above 18 notifier 
+
+    if (calcAge(datepickervalue) > 18) {
+      /// write code
+      if (mode == 2 ) {
+        totamount=(term*eamt)+(term*500*41);
+        maturity.innerHTML = totamount;
+        console.log(+totamount);
+      }else {
+        totamount=(eamt*12*term)+(term*500*41);
+        maturity.innerHTML = totamount;
+        slide();
+        console.log(+totamount);
+      }
+
+
+    } else {
+            M.toast({html: 'Minimum age 18 required ! ', classes: 'rounded'});
+    }
+
+
+  }
+function calcAge(dateString) {
+  var birthday = +new Date(dateString);
+  return ~~((Date.now() - birthday) / (31557600000));
+}
+function slide() {
+      var elem = document.getElementById('resultblock');
+  elem.classList.toggle('hide');
+}
     </script>
 </body>
 

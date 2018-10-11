@@ -12,6 +12,9 @@ display: block;
 text-align: center;
 }
 }
+.hide {
+  height: 0;
+}
 .materialize-red-text {
   color: #e51c23 !important;
 }
