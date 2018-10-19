@@ -16,12 +16,12 @@
     <nav class="pbpurple z-depth-0" role="navigation">
         <div class="nav-wrapper" style="margin-right: 10px;"><a id="logo-container" href="#" class="brand-logo left logotext"><i class=""><img class="logo-image" src="img/logo.png"></i>
 K5 Financial<span class="logospan"> Services</span></a>            <ul class="right hide-on-med-and-down">
-                <li><a href="#" class="navitem">Plan</a></li>
-                <li><a href="#" class="navitem">Contact Us</a></li>
+                <li><a href="index.html#plandiv" class="navitem">Plan</a></li>
+                <li><a href="contactus.html" class="navitem">Contact Us</a></li>
             </ul>
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="#" class="">Plan</a></li>
-                <li><a href="#" class="">Contact Us</a></li>
+                <li><a href="index.html#plandiv" class="">Plan</a></li>
+                <li><a href="contactus.html" class="">Contact Us</a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="padding-top: 50px"><i class="material-icons">menu</i></a>
         </div>
@@ -240,6 +240,7 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
       if (mode == 2 ) {
         totamount=(term*eamt)+(term*500*41);
         maturity.innerHTML = totamount;
+        slide();
         console.log(+totamount);
       }else {
         totamount=(eamt*12*term)+(term*500*41);

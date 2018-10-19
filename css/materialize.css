@@ -11,6 +11,12 @@ position: relative;
 display: block;
 text-align: center;
 }
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 }
 .hide {
   height: 0;

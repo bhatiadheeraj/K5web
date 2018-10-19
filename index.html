@@ -3,7 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+ -->    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <title>K5 Financial Services</title>
     <!-- CSS  -->
@@ -19,12 +20,12 @@
         <div class="nav-wrapper" style="margin-right: 10px;"><a id="logo-container" href="#" class="brand-logo left logotext"><i class=""><img class="logo-image" src="img/logo.png"></i>
 K5 Financial<span class="logospan"> Services</span></a>
             <ul class="right hide-on-med-and-down">
-                <li id="planli"><a href="#plandiv" class="navitem">Plan</a></li>
-                <li><a href="#" class="navitem">Contact Us</a></li>
+                <li id="planli" ><a href="#plandiv" class="navitem">Plan</a></li>
+                <li><a href ='contactus.html'class="navitem">Contact Us</a></li>
             </ul>
             <ul id="nav-mobile" class="sidenav">
                 <li><a href="#plandiv" class="">Plan</a></li>
-                <li href="contactus.html"><a href="contactus.html" class="">Contact Us</a></li>
+                <li><a href="contactus.html" class="">Contact Us</a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="padding-top: 50px" ><i class="material-icons">menu</i></a>
         </div>
@@ -38,9 +39,8 @@ under one roof.</p>
                <div class="text-left"> <a class="waves-effect waves-light btn btn-mine white text-left" style="margin-bottom: 40px;">Know More</a></div>
             </div>
             <div class="col s12 m6 hide-on-med-and-down">
-                <div style="    margin-right: -15px; 
-    margin-left: -15px;  ">
-                    <img class="" style="width: auto; max-width: 100%;vertical-align: bottom;display:inline;" src="img/multitask.png">
+                <div>
+                    <img style="max-width: 100%;vertical-align: bottom;display:inline;" src="img/multitask.png">
                 </div>
             </div>
         </div>
@@ -130,9 +130,9 @@ under one roof.</p>
             <div class="col l2 s2 center">
               <img class="center" src="img/smf.png">
               <p class="center ser-text ">Mutual Funds</p>
-              <div class="blue" style="border-radius: 5px;
+              <div id='afdm' class="blue" style="border-radius: 5px;
 ">
-              <p class="white-text">Apply for<br> DMAT account</p></div>
+              <p class="white-text" >Apply for<br> DMAT account</p></div>
 <!--               <a class="waves-effect waves-light btn-small blue">Apply</a>
  -->            </div>   
                         <div class="col l2 s2 center">
@@ -153,7 +153,7 @@ under one roof.</p>
             <div class="center">
                 <h4 class="underline center">Plan</h4>
                 <p style="/* plan better with our: */
-font-family: Poppins-ExtraLight;
+font-family: Poppins-ExtraLight,'Arial';
 font-size: 20px;
 color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
             </div>
@@ -210,6 +210,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
           </div>
         </div>
 </div>
+</div>
 
       <h4 class="center headingpartners">Our Partners</h4>
       <div style="background-color: #F3F3F3;">
@@ -229,7 +230,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
           <img src="img/KMB.png" style="padding: 25px;" class="responsive-img center maginnerleft">
           </div>
         </div>
-                        <div class="col s3">
+        <div class="col s3">
           <div class="center">
           <img src="img/paytm.png" style="padding: 25px;" class="responsive-img center maginnerleft">
           </div>
@@ -256,7 +257,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
         </div>
                         <div class="col s4">
           <div class="center">
-          <img src="img/segment.png" style="padding: 25px;" class="responsive-img center ">
+          <img src="img/planning.png" style="padding: 25px;" class="responsive-img center ">
           <h5 class="navyblue">Financial Planning</h5>
           <p class="center whyus-text">Proper financial planning for each income segment.</p>
           </div>
@@ -290,7 +291,7 @@ color: #373A3C;padding-bottom: 20px">plan better with our tools</p>
 
       <h4 class="center headingpartners">Get in touch</h4>
       <div class="container">
-      <p class="whyus-text center">Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam.Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam Si enim sapiens aliquis miser esse possit, ne ego istam gloriosam ne ego istam gloriosam </p>
+      <p class="whyus-text center">Please feel free to give us your valuable feedbacks so that we can try to serve you better.</p>
       <div class="center" style="padding-bottom: 50px;"><a class="maginnerleft waves-effect waves-light btn btn-plan" href="contactus.html">Contact Us</a>
 </div>
       </div>
@@ -333,7 +334,22 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+<!--     <script src="js/init.js"></script>
+ -->    <script type="text/javascript">
+      var contactsubject = document.getElementById('afdm');
+      contactsubject.onclick = function(){redirector()};
+
+      $("#afdm").hover(
+  function () {
+    $(this).toggleClass("z-depth-4")      
+  }
+);
+      function redirector () {
+        // body... 
+        console.log('I am working')
+        window.location.href = 'contactus.html?subject=ApplyforDmat'
+      }
+    </script>
 </body>
 
 </html>

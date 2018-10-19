@@ -21,12 +21,12 @@
             <div class="nav-wrapper" style="margin-right: 10px;"><a id="logo-container" href="#" class="brand-logo left logotext"><i class=""><img class="logo-image" src="img/logo.png"></i>
 K5 Financial<span class="logospan"> Services</span></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#" class="navitem">Plan</a></li>
-                    <li><a href="#" class="navitem">Contact Us</a></li>
+                    <li><a href="index.html#plandiv" class="navitem">Plan</a></li>
+                    <li><a href="contactus.html" class="navitem">Contact Us</a></li>
                 </ul>
                 <ul id="nav-mobile" class="sidenav">
-                    <li><a href="#" class="">Plan</a></li>
-                    <li><a href="#" class="">Contact Us</a></li>
+                    <li><a href="index.html#plandiv" class="">Plan</a></li>
+                    <li><a href="contactus.html" class="">Contact Us</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
@@ -85,7 +85,7 @@ K5 Financial<span class="logospan"> Services</span></a>
             </div>
             <div class="center-align">
                 <h1 class="footer hlh" ><span><img src="img/rupee-indian.png" class="responsive-img" style="width: 15px;height: auto;"></span><span style="margin-left: 10px" id="emino" >5000</span></h1>
-                <a class="waves-effect waves-light btn orange">Apply Now</a>
+                <a class="waves-effect waves-light btn orange" id="homeloanapply">Apply Now</a>
             </div>
         </div>
     </div>
@@ -133,6 +133,16 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
+
+    var homeloanapply = document.getElementById('homeloanapply');
+    homeloanapply.onclick = function(){redirector()};
+
+    function redirector () {
+        // body... 
+        console.log('I am working')
+        window.location.href = 'contactus.html?subject=ApplyforHomeloan'
+      }
+
     function updateSlider(slideAmount) {
         var display = document.getElementById('inttxt')
         display.innerHTML = slideAmount;
@@ -155,15 +165,18 @@ width: 12%; height: 12%; margin-right: 10px" src="img/logo.png">K5 Financial <sp
         // var finalamt = FV(investment,interest,tenure) / tenure;
         // console.log(""+finalamt);
 
-         var princ = investment;
-         var term  = tenure / 12;
-         var intr   = interest / 1200;
+         // var princ = investment;
+         // var term  = tenure / 12;
+         // var intr   = interest / 1200;
       
-         var fp = FV(princ,interest,term) ;
-         var fcc = fp /tenure
-         console.log("FXX IS "+fcc);
+         // var fp = FV(princ,interest,term) ;
+         // var fcc = fp /tenure
+         // console.log("FXX IS "+fcc);
+         intr = interest/1200;
 
-         document.getElementById('emino').innerHTML = Math.ceil(fcc) ;
+         result = investment *  intr / (1 - (Math.pow(1/(1 + intr), tenure)));
+
+         document.getElementById('emino').innerHTML =  Math.ceil(result);
 
     }
 
